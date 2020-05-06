@@ -1,5 +1,0 @@
-﻿  quickfind.c
-C:\Users\Administrator\source\repos\chapter13\quickfind.c(20,21): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-C:\Users\Administrator\source\repos\chapter13\quickfind.c(18,9): warning C4101: “target_value”: 未引用的局部变量
-C:\Users\Administrator\source\repos\chapter13\quickfind.c(99,20): warning C4018: “<”: 有符号/无符号不匹配
-  chapter13.vcxproj -> C:\Users\Administrator\source\repos\chapter13\Debug\chapter13.exe
