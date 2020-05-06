@@ -52,7 +52,7 @@ Mkfile.old
 dkms.conf
 *.opendb
 /*/Debug/
-!/*/Debug/*,asm
+!/*/Debug/*.asm
 *.log
 /*/.vs/
                                
