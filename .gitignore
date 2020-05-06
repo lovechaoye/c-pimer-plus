@@ -1,9 +1,3 @@
-/
-!*.asm
-!*.c
-!*.cpp
-!*.h
-
 # Prerequisites
 *.d
 
@@ -58,9 +52,12 @@ Mkfile.old
 dkms.conf
 
 # my ignorefile
-#*.opendb
-#/*/Debug/
-#!/*/Debug/*.asm
-#*.log
-#/*/.vs/
-                               
+*.h
+*.sln
+*.vcxproj
+*.user
+*.filters
+/*/Debug/
+!/*/Debug/*.asm
+*.log
+/*/.vs/                        
