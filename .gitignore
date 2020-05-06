@@ -57,7 +57,8 @@ dkms.conf
 *.vcxproj
 *.user
 *.filters
-/*/Debug/
+#/foo/ 和 /foo/*是不一样的,前者忽略foo文件夹，后者不忽略foo文件夹
+/*/Debug/*
 !/*/Debug/*.asm
 *.log
 /*/.vs/
