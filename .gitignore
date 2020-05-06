@@ -1,3 +1,9 @@
+/
+!*.asm
+!*.c
+!*.cpp
+!*.h
+
 # Prerequisites
 *.d
 
@@ -50,9 +56,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-*.opendb
-/*/Debug/
-!/*/Debug/*.asm
-*.log
-/*/.vs/
+
+# my ignorefile
+#*.opendb
+#/*/Debug/
+#!/*/Debug/*.asm
+#*.log
+#/*/.vs/
                                
