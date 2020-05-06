@@ -60,4 +60,6 @@ dkms.conf
 /*/Debug/
 !/*/Debug/*.asm
 *.log
-/*/.vs/                        
+/*/.vs/
+*.log
+*.txt                    
