@@ -62,4 +62,5 @@ dkms.conf
 *.log
 /*/.vs/
 *.log
-*.txt                    
+*.txt
+*.mp4
