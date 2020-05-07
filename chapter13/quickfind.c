@@ -1,4 +1,4 @@
-/* quick.c -- ¿ìËÙ²éÕÒÊı×éµÚk¸öÔªËØ*/
+/* quick.c -- ï¿½ï¿½ï¿½Ù²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½kï¿½ï¿½Ôªï¿½ï¿½*/
 #pragma warning(disable:4996)
 #include<stdio.h>
 #include<stdlib.h>
@@ -9,7 +9,7 @@
 
 int quick_find(int array[], int first, int last, int target);
 void swap(int array[], int index1, int index2);
-int partion(int array[], int left, int right);
+int partition(int array[], int left, int right);
 void print(int array[],int size);
 
 int main(void) {
@@ -33,10 +33,10 @@ int main(void) {
     return 0;
 }
 /*
-    array[],´ı²éÕÒÊı×é
-    first,Êı×éÆğÊ¼Î»ÖÃ £¬´Ó0ËãÆğ
-    last,Êı×é½áÊøÎ»ÖÃ£¬´Ó0ËãÆğ
-    target,Ä¿±êÖµÎ»ÖÃ£¬´ÓµÚÒ»¿ªÊ¼
+    array[],ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    first,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼Î»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½
+    last,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½
+    target,Ä¿ï¿½ï¿½ÖµÎ»ï¿½Ã£ï¿½ï¿½Óµï¿½Ò»ï¿½ï¿½Ê¼
 */
 int quick_find(int array[], int first, int last, int target) {
     assert(first <= last && target >= 1 && ((target-1) <= last -first));
@@ -46,7 +46,7 @@ int quick_find(int array[], int first, int last, int target) {
     int flag = 0;
     while (true)
     {
-        index = partion(array, i, j);
+        index = partition(array, i, j);
         flag = target - (index - first +1);
         if (flag == 0) {
             return array[index];
@@ -60,8 +60,8 @@ int quick_find(int array[], int first, int last, int target) {
     }
 }
 
-int partion(int array[],int left,int right) {
-    //È¡×îÓÒ±ßÔªËØ×÷Îª·ÖÇø
+int partition(int array[],int left,int right) {
+    //È¡ï¿½ï¿½ï¿½Ò±ï¿½Ôªï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
     int pivot = right;
     int pivot_value = array[right];
     int i = left;
